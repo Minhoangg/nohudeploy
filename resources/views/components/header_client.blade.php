@@ -3,7 +3,7 @@
         <div class="container header_top_wrap">
             <div class="row">
                 <div class="logo col-6">
-                        <img src="{{ asset('assets/img/photo_6215422185825222414_x-removebg-preview.png') }}" alt="">
+                        <img src="{{ asset('assets/img/logo.png') }}" alt="">
                 </div>
 
                 <div class="menu_dropdow col-6" id="menuIcon">

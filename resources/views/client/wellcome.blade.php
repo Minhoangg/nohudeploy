@@ -19,7 +19,7 @@
     <div class="wellcome_wrap">
         <div class="wellcome">
             <div class="d-flex justify-content-center">
-                <img src="{{ asset('assets/img/photo_6215422185825222414_x-removebg-preview.png') }}" alt="Logo" class="logo">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" class="logo">
             </div>
             <div class="actions">
                 <a href="{{ route('client.login-form') }}" class="btn btn-login">Đăng nhập</a>

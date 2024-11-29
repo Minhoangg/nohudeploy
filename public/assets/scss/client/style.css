@@ -187,6 +187,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* Thêm bóng nhẹ để tạo chiều sâu */
   transition: background-color 0.3s ease-in-out;
+  /* Hiệu ứng chuyển động gradient */
 }
 .home_wrap .container .box_lobby .row .lobby_item_parent .lobby_item a img {
   width: 20%;
@@ -196,6 +197,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  /* Tùy chỉnh kích thước chữ */
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Chữ in hoa */
+  color: transparent;
+  /* Màu chữ sẽ được lấy từ gradient */
+  background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+}
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 .home_wrap .container .box_lobby .row .lobby_item_parent .lobby_item a .animation_item {
   width: 77px;
@@ -356,6 +377,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 14px;
+  /* Tùy chỉnh kích thước chữ */
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Chữ in hoa */
+  color: transparent;
+  /* Màu chữ sẽ được lấy từ gradient */
+  background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 3s linear infinite;
 }
 .game_wrap .container .box_game .row .lobby_item_parent .lobby_item a .animation_item {
   width: 77px;
