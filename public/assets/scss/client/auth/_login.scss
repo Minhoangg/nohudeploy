@@ -1,0 +1,82 @@
+.login_wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../../../img/photo_6217381558495593506_y.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .login_form {
+        background-size: cover; // Đảm bảo ảnh nền bao phủ toàn bộ khung
+        background-repeat: no-repeat; // Không lặp lại ảnh nền
+        background-position: center; // Đặt ảnh ở trung tâm khung
+        border-radius: 8px; // Bo góc cho form
+        padding: 35px; // Padding bên trong form
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); // Hiệu ứng đổ bóng
+        z-index: 2; // Đảm bảo form luôn trên video
+        min-width: 300px; // Chiều rộng tối thiểu
+        max-width: 400px; // Giới hạn chiều rộng tối đa
+        width: 90%; // Chiếm 90% màn hình trên thiết bị nhỏ
+        background-color: transparent;
+
+        @media (min-width: 768px) {
+            padding: 2rem; // Tăng padding trên màn hình lớn hơn
+        }
+
+        h3 {
+            text-align: center;
+            margin: 5px 0px;
+            color: white;
+        }
+
+        form {
+            margin-bottom: 10px;
+
+            .btn-primary {
+                background-color: #ffc107; // Màu vàng
+                border: none; // Xóa viền nút
+                color: #212529; // Màu chữ tối cho tương phản tốt
+                font-size: 1.2rem; // Tăng kích thước chữ
+                font-weight: bold; // Chữ đậm hơn
+                border-radius: 8px; // Bo góc tròn nhẹ
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); // Hiệu ứng bóng ảo
+                transition: all 0.3s ease; // Hiệu ứng chuyển đổi mượt
+
+                &:hover {
+                    background-color: #e0a800; // Màu vàng đậm hơn khi hover
+                    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); // Tăng cường bóng khi hover
+                    transform: translateY(-3px); // Tạo hiệu ứng nút nổi lên khi hover
+                }
+
+                &:active {
+                    background-color: #d39e00; // Màu tối hơn khi nút được nhấn
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); // Giảm bóng khi nhấn
+                    transform: translateY(2px); // Nút "chìm" nhẹ khi nhấn
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .login_wrap{
+        background-image: url('../../../img/photo_6215453676525438641_x.jpg');
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}

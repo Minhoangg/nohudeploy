@@ -1,0 +1,164 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.login_wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../img/photo_6217381558495593506_y.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.login_wrap .login_form {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  padding: 35px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  min-width: 300px;
+  max-width: 400px;
+  width: 90%;
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .login_wrap .login_form {
+    padding: 2rem;
+  }
+}
+.login_wrap .login_form h3 {
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+.login_wrap .login_form form {
+  margin-bottom: 10px;
+}
+.login_wrap .login_form form .btn-primary {
+  background-color: #ffc107;
+  border: none;
+  color: #212529;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.login_wrap .login_form form .btn-primary:hover {
+  background-color: #e0a800;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+.login_wrap .login_form form .btn-primary:active {
+  background-color: #d39e00;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .login_wrap {
+    background-image: url("../../../img/photo_6215453676525438641_x.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.wellcome_wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../img/photo_6217381558495593506_y.jpg");
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.wellcome_wrap .wellcome {
+  z-index: 100;
+  padding: 10px;
+  /* Nút Đăng nhập */
+  /* Nút Đăng nhập */
+  /* Nút Đăng ký */
+  /* Responsive: Đảm bảo các nút sẽ tự động điều chỉnh trên các màn hình nhỏ */
+}
+.wellcome_wrap .wellcome .logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.wellcome_wrap .wellcome .actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* Đảm bảo khoảng cách đều giữa hai nút */
+}
+.wellcome_wrap .wellcome .btn-login,
+.wellcome_wrap .wellcome .btn-register {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  text-transform: uppercase;
+  width: 150px;
+  /* Đảm bảo chiều rộng của cả hai nút bằng nhau */
+  text-align: center;
+  /* Canh giữa văn bản trong nút */
+  white-space: nowrap;
+  /* Không để văn bản bị cắt hoặc xuống dòng */
+  /* Hiệu ứng hover chung cho cả 2 nút */
+}
+.wellcome_wrap .wellcome .btn-login:hover,
+.wellcome_wrap .wellcome .btn-register:hover {
+  transform: scale(1.05);
+}
+.wellcome_wrap .wellcome .btn-login {
+  background-image: -webkit-linear-gradient(-90deg, #f3a2ff, #e324ff 25%, #8c20e5 85%, #ffb4f9 115%);
+}
+.wellcome_wrap .wellcome .btn-login:hover {
+  background-image: -webkit-linear-gradient(-90deg, #e324ff, #f3a2ff 25%, #8c20e5 85%, #ffb4f9 115%);
+}
+.wellcome_wrap .wellcome .btn-register {
+  background-image: -webkit-linear-gradient(-90deg, #ffcc00, #ffdd5b 25%, #ffdb00 85%, #ffe5a3 115%);
+}
+.wellcome_wrap .wellcome .btn-register:hover {
+  background-image: -webkit-linear-gradient(-90deg, #ffdb00, #ffcc00 25%, #ffe5a3 85%, #ffdd5b 115%);
+}
+
+@media (max-width: 768px) {
+  .wellcome_wrap {
+    background-image: url("../../../img/photo_6215453676525438641_x.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .btn-login,
+  .btn-register {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=auth.css.map */

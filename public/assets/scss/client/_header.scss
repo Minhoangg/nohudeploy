@@ -1,0 +1,149 @@
+.header_main {
+    background-color: #50dee0;
+    height: 10%;
+    position: relative;
+
+    .header_top {
+        height: 100%;
+
+        .header_top_wrap {
+            background-color: #50dee0;
+            height: 100%;
+            padding: 0px;
+
+            .row {
+            height: 100%;
+
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+
+                        img {
+                            max-width: 100%;
+                            /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử cha */
+                            height: auto;
+                            /* Duy trì tỷ lệ */
+                            width: 400px;
+                            /* Cho phép co giãn khi cần */
+                            max-height: 60px
+            
+                    }
+                }
+
+                .menu_dropdow {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    color: white;
+
+                    @media (min-width: 769px) {
+                        display: none;
+                    }
+                }
+
+                .action {
+                    color: white;
+
+                    .account {
+                        margin-right: 20px;
+
+                        @media (max-width: 769px) {
+                            display: none;
+                        }
+
+                        a {
+                            color: white;
+
+                            i {
+                                font-size: 23px;
+                            }
+
+                            span {
+                                padding: 0px 3px;
+
+                                @media (max-width: 768px) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .cart_box {
+                        margin: 0px 5px;
+                        position: relative;
+
+                        a {
+                            color: white;
+
+                            i {
+                                font-size: 23px;
+                            }
+
+                            span {
+                                position: absolute;
+                                right: -10px;
+                                background-color: var(--primary-color);
+                                border-radius: 100%;
+                                color: white;
+                                font-size: 11px;
+                                font-weight: 500;
+                                width: 18px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .mobile_menu {
+        position: absolute;
+        display: none;
+        z-index: 10000;
+        background-color: #50dee0;
+        color: white;
+
+
+        @media (min-width: 769px) {
+            display: none;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+
+            li {
+                margin-right: 40px;
+                font-weight: 600;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px 0;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 14px;
+                    }
+                }
+
+                &:hover>a {
+                    color: var(--primary-color);
+                }
+
+            }
+        }
+    }
+}

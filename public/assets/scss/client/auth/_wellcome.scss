@@ -1,0 +1,104 @@
+.wellcome_wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../img/photo_6217381558495593506_y.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .wellcome {
+        z-index: 100;
+        padding: 10px;
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            /* Đảm bảo khoảng cách đều giữa hai nút */
+        }
+
+        /* Nút Đăng nhập */
+        .btn-login,
+        .btn-register {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s ease;
+            color: #fff;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            display: inline-block;
+            text-transform: uppercase;
+            width: 150px;
+            /* Đảm bảo chiều rộng của cả hai nút bằng nhau */
+            text-align: center;
+            /* Canh giữa văn bản trong nút */
+            white-space: nowrap;
+            /* Không để văn bản bị cắt hoặc xuống dòng */
+
+            /* Hiệu ứng hover chung cho cả 2 nút */
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Nút Đăng nhập */
+        .btn-login {
+            background-image: -webkit-linear-gradient(-90deg, #f3a2ff, #e324ff 25%, #8c20e5 85%, #ffb4f9 115%);
+
+            &:hover {
+                background-image: -webkit-linear-gradient(-90deg, #e324ff, #f3a2ff 25%, #8c20e5 85%, #ffb4f9 115%);
+            }
+        }
+
+        /* Nút Đăng ký */
+        .btn-register {
+            background-image: -webkit-linear-gradient(-90deg, #ffcc00, #ffdd5b 25%, #ffdb00 85%, #ffe5a3 115%);
+
+            &:hover {
+                background-image: -webkit-linear-gradient(-90deg, #ffdb00, #ffcc00 25%, #ffe5a3 85%, #ffdd5b 115%);
+            }
+        }
+
+        /* Responsive: Đảm bảo các nút sẽ tự động điều chỉnh trên các màn hình nhỏ */
+
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .wellcome_wrap{
+        background-image: url('../../../img/photo_6215453676525438641_x.jpg');
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .btn-login,
+    .btn-register {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}

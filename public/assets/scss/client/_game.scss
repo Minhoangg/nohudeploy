@@ -1,0 +1,251 @@
+.game_wrap {
+    height: 90%;
+    position: relative;
+    background-image: url('../../img/photo_6217381558495593506_y.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .container {
+        position: relative;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .box_game {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Đảm bảo .back ở trên cùng và .row ở giữa */
+            align-items: center;
+
+            .back {
+                color: rgb(81, 255, 0);
+                padding: 0px 15px;
+                width: 100%;
+                display: flex;
+
+                .name_game {
+                    background-image: url('../../img/z6079204606808_38c9920ab958de622b47ede9b2f2d634-removebg-preview.png');
+                    background-size: 100% 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    padding: 10px;
+                    width: 200px;
+                    min-width: 100px;
+                    max-width: 100%;
+                    text-align: center;
+
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+
+
+                i {
+                    font-size: x-large;
+                }
+            }
+
+            .row {
+                width: 100%;
+                max-height: 70%;
+                overflow-y: auto;
+                scrollbar-width: none;
+                padding: 0px;
+                margin: 0 auto;
+
+                .lobby_item_parent {
+
+                    margin: 10px 0px;
+
+                    .lobby_item {
+
+                        a {
+                            color: white;
+                            /* Màu chữ trắng */
+                            padding: 10px;
+                            border: 2px solid white;
+                            /* Viền trắng */
+                            border-radius: 20px;
+                            /* Bo tròn góc */
+                            display: flex;
+                            justify-content: space-between;
+                            text-decoration: none;
+                            background-color: #e6a179;
+                            /* Nền xám nhẹ */
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            /* Thêm bóng nhẹ để tạo chiều sâu */
+                            transition: background-color 0.3s ease-in-out;
+
+                            img {
+                                width: 20%;
+                            }
+
+                            .item_name {
+                                width: 60%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .animation_item {
+                                width: 77px;
+                                height: 70px;
+                                background-size: cover;
+                                /* Hoặc 'contain' tùy thuộc vào hiệu ứng bạn muốn */
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                position: relative;
+
+                                span {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 20px;
+                                }
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    clip-path: circle(50% at 50% 50%);
+                                    animation: spin 5s linear infinite;
+                                    aspect-ratio: 1/1;
+                                    cursor: pointer;
+
+                                    @keyframes spin {
+                                        0% {
+                                            transform: rotate(0deg);
+                                        }
+
+                                        100% {
+                                            transform: rotate(360deg);
+                                        }
+                                    }
+
+                                    &:hover {
+                                        animation-direction: reverse;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .box_lobby {
+        /* Cho phép chiều cao tự động thay đổi trên các màn hình nhỏ */
+        font-size: 20px;
+        /* Giảm kích thước font cho màn hình nhỏ */
+    }
+
+    .col-4 {
+        width: 48%;
+        /* 2 cột trên màn hình nhỏ */
+    }
+}
+
+@media (max-width: 768px) {
+    .game_wrap {
+        background-image: url('../../img/photo_6215453676525438641_x.jpg');
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .back {
+        color: rgb(81, 255, 0);
+        padding: 0px 15px;
+        width: 100%;
+        display: flex;
+
+        .name {
+            background-image: url('../../img/z6079204606808_38c9920ab958de622b47ede9b2f2d634-removebg-preview.png');
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 10px;
+            width: 300px;
+            /* Độ rộng ban đầu */
+            min-width: 100px;
+            /* Đảm bảo không nhỏ hơn 100px */
+            max-width: 100%;
+            /* Giới hạn độ rộng tối đa (tùy vào container) */
+            text-align: center;
+            font-size: 16px;
+        }
+
+
+        i {
+            font-size: x-large;
+        }
+    }
+
+    .box_lobby {
+        max-height: 80%;
+        font-size: 18px;
+        /* Giảm kích thước font cho các màn hình di động */
+    }
+
+    .col-4 {
+        width: 100%;
+        /* 1 cột trên màn hình di động */
+    }
+}
+
+@media (max-width: 480px) {
+    .game_wrap {
+        background-image: url('../../img/photo_6215453676525438641_x.jpg');
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .name {
+        background-image: url('../../img/z6079204606808_38c9920ab958de622b47ede9b2f2d634-removebg-preview.png');
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 10px;
+        width: 200px;
+        /* Độ rộng ban đầu */
+        min-width: 100px;
+        /* Đảm bảo không nhỏ hơn 100px */
+        max-width: 100%;
+        /* Giới hạn độ rộng tối đa (tùy vào container) */
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    i {
+        font-size: x-large;
+    }
+
+    .box_lobby {
+        max-height: 80%;
+        font-size: 16px;
+        /* Giảm kích thước font thêm cho màn hình điện thoại nhỏ */
+    }
+
+    .col-4 {
+        width: 100%;
+        /* 1 cột trên màn hình rất nhỏ */
+    }
+}
